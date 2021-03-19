@@ -18,7 +18,7 @@
   ],
   "author": "alan orozco <alan@orozco.xyz>",
   "license": "MIT",
-  "description": "Use the same font for code across different sites",
+  "description": "Use the same code font across different sites",
   "devDependencies": {
     "esbuild": "0.9.3"
   }
