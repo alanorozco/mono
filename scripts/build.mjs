@@ -6,9 +6,11 @@ import {
   writeFileSync,
   readFileSync,
   rmdirSync,
+  readdirSync,
 } from "node:fs";
 import sites from "../src/sites.mjs";
-import { dirname } from "path";
+import { basename, dirname } from "path";
+import { copyFileSync } from "fs";
 
 const dist = "dist";
 
@@ -63,6 +65,16 @@ function buildScript(name) {
   });
 }
 
+function copyFilesShallow(dir, extension) {
+  ensureDir(`${dist}/${dir}`);
+
+  for (const file of readdirSync(`src/${dir}`)) {
+    if (file.endsWith(extension)) {
+      copyFileSync(`src/${dir}/${file}`, `${dist}/${dir}/${file}`);
+    }
+  }
+}
+
 async function buildHtml(name) {
   const tmp = `${dist}/tmp`;
 
@@ -105,6 +117,8 @@ async function buildHtml(name) {
 }
 
 ensureDir(dist);
+
+copyFilesShallow("icon", ".png");
 
 buildManifestJson(buildSitesCss());
 buildScript("background");

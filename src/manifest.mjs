@@ -6,6 +6,10 @@ export default function ({ name, version, description, sitesCss }) {
     name,
     version,
     description,
+    icons: {
+      48: "icon/48.png",
+      128: "icon/128.png",
+    },
     permissions: [],
     host_permissions: sitesCss.map(([matches]) => matches).flat(),
     content_scripts: sitesCss.map(([matches, filename]) => ({
