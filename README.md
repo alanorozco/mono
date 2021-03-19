@@ -10,7 +10,7 @@ Enabled sites have their code font reset to `monospace`, so they'll respect your
 
 ## Why not use Stylish?
 
-This extension is different from Stylish (and friends) in some key ways:
+This extension is different from [Stylish](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) (and friends) in some key ways:
 
 - Stylish requires access to **all domains**, so you may not be able to install it on managed browser environments.
 
