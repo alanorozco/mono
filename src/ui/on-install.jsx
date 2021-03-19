@@ -7,7 +7,8 @@ export function Html({ name }) {
       <h1>{name}</h1>
       <p>
         Enabled sites have their code font reset to <code>monospace</code>, so
-        they'll respect your font browser settings. (It looks like this.)
+        they'll respect your browser's font settings. (Your font looks like
+        this.)
       </p>
       <h2>Customize Font</h2>
       <ol>
@@ -76,9 +77,9 @@ export function run() {
       document.execCommand("copy");
 
       // swap icons
-      const {firstElementChild, lastElementChild} = button;
-      firstElementChild.setAttribute('hidden', '');
-      lastElementChild.removeAttribute('hidden');
+      const { firstElementChild, lastElementChild } = button;
+      firstElementChild.setAttribute("hidden", "");
+      lastElementChild.removeAttribute("hidden");
     });
   }
 
