@@ -1,0 +1,25 @@
+{
+  "name": "mono",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "font",
+    "monospace",
+    "monospaced",
+    "stylish",
+    "css",
+    "code",
+    "chrome",
+    "extension"
+  ],
+  "author": "alan orozco <alan@orozco.xyz>",
+  "license": "MIT",
+  "description": "Use the same font for code across different sites on Chrome",
+  "devDependencies": {
+    "esbuild": "0.9.3"
+  }
+}

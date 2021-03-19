@@ -1,0 +1,130 @@
+:root {
+  --systemStackSansSerif: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+
+  --background: white;
+  --fill: #444;
+  --fillSoft: #ccc;
+  --accent: rgb(78, 104, 255);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: rgb(45, 49, 70);
+    --fill: rgb(214, 214, 214);
+    --fillSoft: rgb(73, 77, 97);
+    --accent: rgb(142, 159, 255);
+  }
+}
+
+[hidden] {
+  display: none;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: monospace;
+  background: var(--background);
+  color: var(--fill);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+svg,
+path {
+  fill: var(--fill);
+  color: var(--fill);
+}
+
+textarea {
+  padding: 20px;
+  margin: 20px 0;
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+}
+
+textarea,
+input,
+button {
+  line-height: inherit;
+  background: inherit;
+  color: inherit;
+  font: inherit;
+  border: 1px solid var(--fillSoft);
+  outline: none;
+}
+
+input,
+button {
+  padding: 4px;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea:focus {
+  box-shadow: 0 0 0 4px var(--fillSoft);
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin: 30px 0 10px;
+  font-family: var(--systemStackSansSerif);
+}
+
+h1 {
+  margin: 40px 0 20px;
+  font-size: 2em;
+  text-align: center;
+}
+
+footer {
+  margin: auto 0 0;
+}
+
+.site-options {
+  margin: 20px 0;
+}
+
+ul,
+ol {
+  margin: 10px 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.copyable {
+  display: inline-block;
+}
+
+.copyable > input {
+  /* disable border box to add padding to dynamic width */
+  box-sizing: content-box;
+  margin: 0;
+  padding: 4px 0;
+  border: none;
+  color: var(--accent);
+}
+
+.copyable button {
+  padding: 0;
+  margin-left: 4px;
+  border: none;
+}

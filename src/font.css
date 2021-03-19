@@ -1,0 +1,6 @@
+pre,
+code,
+selector {
+  font-family: monospace;
+  font-feature-settings: "liga" 1;
+}
