@@ -1,8 +1,6 @@
 import { Checkmark, Clipboard } from "./icons";
 import { Body } from "./ui";
 
-// We use JSX only to generate an HTML string.
-// The generated file will use the run() function as its only script.
 export function Html({ name }) {
   return (
     <Body name={name} style="opacity: 0">
