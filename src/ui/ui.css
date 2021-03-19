@@ -5,15 +5,15 @@
   --background: white;
   --fill: #444;
   --fillSoft: #ccc;
-  --accent: rgb(78, 104, 255);
+  --accent: #a60adf;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: rgb(45, 49, 70);
-    --fill: rgb(214, 214, 214);
-    --fillSoft: rgb(73, 77, 97);
-    --accent: rgb(142, 159, 255);
+    --background: #2d3146;
+    --fill: #ddd;
+    --fillSoft: #aaa;
+    --accent: #eab1ff;
   }
 }
 
@@ -124,7 +124,20 @@ li {
 }
 
 .copyable button {
-  padding: 0;
+  padding: 4px 6px;
   margin-left: 4px;
   border: none;
+}
+
+button svg,
+button path {
+  color: var(--accent);
+  fill: var(--accent);
+}
+
+a[href] {
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
 }

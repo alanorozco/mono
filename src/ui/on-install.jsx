@@ -4,7 +4,10 @@ import { Body } from "./ui";
 export function Html({ name }) {
   return (
     <Body name={name} style="opacity: 0">
-      <h1>{name}</h1>
+      <h1>
+        <Logo />
+        {name}
+      </h1>
       <p>
         Enabled sites have their code font reset to <code>monospace</code>, so
         they'll respect your browser's font settings. (Your font looks like
@@ -31,8 +34,26 @@ export function Html({ name }) {
           Under <strong>Site Access</strong>, enable or disable hostnames.
         </li>
       </ol>
+      <p>
+        (You may also{" "}
+        <a
+          href="https://github.com/alanorozco/mono/blob/main/src/sites.mjs"
+          target="_blank"
+        >
+          contribute new sites.
+        </a>
+        )
+      </p>
       <script src="on-install.js"></script>
     </Body>
+  );
+}
+
+function Logo() {
+  return (
+    <div>
+      <img src="../icon/48.png" width="48" height="48" />
+    </div>
   );
 }
 
