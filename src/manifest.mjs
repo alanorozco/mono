@@ -11,7 +11,7 @@ export default function ({ name, version, description, sitesCss }) {
       128: "icon/128.png",
     },
     permissions: [],
-    host_permissions: sitesCss.map(([matches]) => matches).flat(),
+    optional_permissions: sitesCss.map(([matches]) => matches).flat(),
     content_scripts: sitesCss.map(([matches, filename]) => ({
       matches,
       css: [filename],
