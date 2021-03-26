@@ -1,6 +1,6 @@
 # `mono`
 
-Use the same code font across different sites on Chrome.
+🔣 Use the same code font across different sites.
 
 ## Usage
 
