@@ -8,7 +8,16 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module",
   },
+  plugins: ["local"],
   rules: {
     "no-unused-vars": "warn",
   },
+  overrides: [
+    {
+      files: ["src/sites.mjs"],
+      rules: {
+        "local/sites": "error",
+      },
+    },
+  ],
 };
