@@ -4,7 +4,7 @@ Use the same code font across different sites on Chrome.
 
 ## Usage
 
-> Install extension.
+> [Install extension from the Chrome Web Store.](https://chrome.google.com/webstore/detail/mono/edccgmhfggchdhiblnajhnnmnadojfoo)
 
 Enabled sites have their code font reset to `monospace`, so they'll respect your browser's font settings.
 
