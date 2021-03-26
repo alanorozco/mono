@@ -9,7 +9,7 @@ import {
   readdirSync,
 } from "node:fs";
 import sites from "../src/sites.mjs";
-import { basename, dirname } from "path";
+import { dirname } from "path";
 import { copyFileSync } from "fs";
 
 const dist = "dist";
