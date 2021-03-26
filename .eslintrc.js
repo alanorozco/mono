@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: ["local"],
   rules: {
-    "no-unused-vars": "warn",
+    "no-unused-vars": "error",
   },
   overrides: [
     {
