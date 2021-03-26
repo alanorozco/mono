@@ -20,6 +20,7 @@
   "license": "MIT",
   "description": "Use the same code font across different sites",
   "devDependencies": {
-    "esbuild": "0.10.0"
+    "esbuild": "0.10.0",
+    "eslint": "7.22.0"
   }
 }
