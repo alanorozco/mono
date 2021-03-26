@@ -27,6 +27,11 @@ export default {
     ],
   },
 
+  jsbin: {
+    prefix: ["https://jsbin.com/"],
+    selectors: ["#bin .editbox .CodeMirror pre", ".mobile .editbox textarea"],
+  },
+
   mdn: {
     prefix: ["https://developer.mozilla.org/"],
     selectors: ["pre", "code"],
