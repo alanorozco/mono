@@ -27,7 +27,7 @@ function buildSitesCss() {
   const sitesCss = [];
 
   for (const id in sites) {
-    const { selector, prefix } = sites[id];
+    const { selectors, prefix } = sites[id];
     const matches = prefix.map((prefix) => `${prefix}*`);
 
     const filename = `css/${id}.css`;
@@ -37,7 +37,7 @@ function buildSitesCss() {
 
     writeFileSync(
       filenameWritten,
-      template.replace("selector {", `${selector} {`)
+      template.replace("selector {", `${selectors.join(",\n")} {`)
     );
 
     sitesCss.push([matches, filename]);
